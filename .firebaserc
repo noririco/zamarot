@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "zamarot-38278"
+  },
+  "targets": {
+    "zamarot-38278": {
+      "hosting": {
+        "zamarot": [
+          "zamarot-38278"
+        ]
+      }
+    }
   }
 }
