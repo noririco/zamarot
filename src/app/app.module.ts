@@ -1,6 +1,8 @@
+import { environment } from './../environments/environment';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from '@angular/fire';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,7 +19,7 @@ import { LogozComponent } from './logoz/logoz.component';
     CarouselItemElementDirective,
     CarouselItemDirective,
     CarouselComponent,
-    LogozComponent
+    LogozComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,9 +27,10 @@ import { LogozComponent } from './logoz/logoz.component';
     AppRoutingModule,
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
