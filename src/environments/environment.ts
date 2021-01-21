@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  ynapi: '/ynapi',
+  poapi: '/poapi',
   firebase: {
     apiKey: 'AIzaSyDtVjjEgHF1NHFaYWoOlLz-rxtgPKVvI7k',
     authDomain: 'zamarot-38278.firebaseapp.com',

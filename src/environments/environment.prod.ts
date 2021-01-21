@@ -1,5 +1,7 @@
 export const environment = {
   production: true,
+  ynapi: 'http://www.ynet.co.il/Integration/StoryRss1854.xml',
+  poapi: 'https://polisa.news/feed/',
   firebase: {
     apiKey: 'AIzaSyDtVjjEgHF1NHFaYWoOlLz-rxtgPKVvI7k',
     authDomain: 'zamarot-38278.firebaseapp.com',

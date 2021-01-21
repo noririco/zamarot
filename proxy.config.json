@@ -1,5 +1,5 @@
 {
-  "/ynapi/*": {
+  "/ynapi": {
     "target": "http://www.ynet.co.il/Integration/StoryRss1854.xml",
     "secure": false,
     "changeOrigin": true,
@@ -7,7 +7,7 @@
       "^/ynapi": ""
     }
   },
-  "/poapi/*": {
+  "/poapi": {
     "target": "https://polisa.news/feed/",
     "secure": true,
     "changeOrigin": true,

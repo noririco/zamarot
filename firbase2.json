@@ -4,7 +4,21 @@
   },
   "hosting": [
     {
-      "public": "dist/zamarot",
+      "redirects": [
+        {
+          "source": "/ynapi",
+          "destination": "http://www.ynet.co.il/Integration/StoryRss1854.xml",
+          "type": 301
+        },
+        {
+          "source": "/poapi",
+          "destination": "https://polisa.news/feed/",
+          "type": 301
+        }
+      ]
+    },
+    {
+      "public": "dist",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
@@ -26,6 +40,18 @@
               "value": "public,max-age=31536000,immutable"
             }
           ]
+        }
+      ],
+      "redirects": [
+        {
+          "source": "/ynapi",
+          "destination": "http://www.ynet.co.il/Integration/StoryRss1854.xml",
+          "type": 301
+        },
+        {
+          "source": "/poapi",
+          "destination": "https://polisa.news/feed/",
+          "type": 301
         }
       ],
       "rewrites": [
